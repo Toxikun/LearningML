@@ -17,6 +17,23 @@ This project is a comprehensive Machine Learning study aimed at predicting apart
 *   **Deployment:** A web application built with **Streamlit** for real-time price predictions.
 *   **Success Metrics:** The advanced model achieves approximately **63% R² score** on test data.
 
+### 📈 Model Progression & Learning Journey
+
+The development followed an iterative path, focusing on performance gains and avoiding common pitfalls like data leakage.
+
+**First Model (Initial Learning):**
+*   Started with a baseline R² of **0.22** (Linear Regression).
+*   Improved to **0.43** through data cleaning.
+*   Reached **0.54** by switching to Random Forest Regressor.
+
+**Second Model (Advanced Optimization):**
+*   Baseline: **0.59** -> **0.60** (XGBoost introduction).
+*   ⚠️ **Data Leakage Check:** Hit **0.99** at one point. Identified as data leakage (using future information/target-related features). **Reverted** to maintain integrity.
+*   Stable gain: reached **0.62**.
+*   ⚠️ **Anomaly Check:** Hit **0.94** again. Re-evaluated and **reverted** due to overfitting/leakage suspicions.
+*   **Final Stable Path:** **63.16** -> **63.26** (Current Version).
+
+
 ### 🛠 Tech Stack
 
 *   **Logic:** Python (Pandas, NumPy, Scikit-learn, XGBoost)
@@ -56,6 +73,23 @@ Bu proje, İstanbul'daki daire kira fiyatlarını tahmin etmeyi amaçlayan kapsa
     *   **Second Model (İkinci Model):** **XGBoost Regressor**, **K-Means Kümeleme** (segmentasyon için) ve gelişmiş **Özellik Mühendisliği** (etkileşim terimleri, oranlar) içeren profesyonel yaklaşım.
 *   **Canlı Uygulama:** Gerçek zamanlı tahminler için **Streamlit** ile geliştirilmiş kullanıcı arayüzü.
 *   **Başarı Oranı:** Gelişmiş model, test verileri üzerinde yaklaşık **%63 R² skoru** elde etmiştir.
+
+### 📈 Model Gelişim Süreci ve Öğrenimler
+
+Geliştirme süreci, performans artışı sağlamak ve "data leakage" (veri sızıntısı) gibi hatalardan kaçınmak için iteratif bir yol izlemiştir.
+
+**First Model (İlk Denemeler):**
+*   **0.22** R² skoru ile başlandı (Doğrusal Regresyon).
+*   Veri temizliği ile **0.43**'e yükseltildi.
+*   Random Forest Regressor'a geçilerek **0.54** başarıya ulaşıldı.
+
+**Second Model (İleri Seviye):**
+*   XGBoost girişiyle **0.59** -> **0.60** seviyelerine gelindi.
+*   ⚠️ **Veri Sızıntısı Deneyimi:** Bir noktada **0.99** skoru görüldü. Bunun veri sızıntısından (hedef değişkenle doğrudan ilişkili hatalı özellik kullanımı) kaynaklandığı tespit edildi ve **geri alındı**.
+*   Kararlı artış: **0.62**'ye ulaşıldı.
+*   ⚠️ **Hatalı Artış:** Tekrar **0.94** skoru görüldü, aşırı öğrenme (overfitting) veya sızıntı şüphesiyle tekrar **geri alındı**.
+*   **Final Kararlı Sürüm:** **63.16** -> **63.26** (Mevcut en iyi versiyon).
+
 
 ### 🛠 Teknolojiler
 
