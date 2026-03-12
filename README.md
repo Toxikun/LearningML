@@ -24,7 +24,7 @@ The development followed an iterative path, focusing on performance gains and av
 **First Model (Initial Learning):**
 *   Started with a baseline R² of **0.22** (Linear Regression).
 *   Improved to **0.43** through data cleaning.
-*   Reached **0.54** by switching to Random Forest Regressor.
+*   Reached **0.60** by switching to Random Forest Regressor.
 
 **Second Model (Advanced Optimization):**
 *   Baseline: **0.59** -> **0.60** (XGBoost introduction).
@@ -81,7 +81,7 @@ Geliştirme süreci, performans artışı sağlamak ve "data leakage" (veri sız
 **First Model (İlk Denemeler):**
 *   **0.22** R² skoru ile başlandı (Doğrusal Regresyon).
 *   Veri temizliği ile **0.43**'e yükseltildi.
-*   Random Forest Regressor'a geçilerek **0.54** başarıya ulaşıldı.
+*   Random Forest Regressor'a geçilerek **0.60** başarıya ulaşıldı.
 
 **Second Model (İleri Seviye):**
 *   XGBoost girişiyle **0.59** -> **0.60** seviyelerine gelindi.
